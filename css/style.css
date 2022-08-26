@@ -1,0 +1,64 @@
+
+body{
+    background-color: black;
+}
+.title{
+    font-size: 6vw;
+    margin: 0;
+}
+section{
+    width: 100%;
+}
+.underline{
+    transition: border .2s;
+}
+ .underline:hover{
+    border-bottom: 2px solid white;
+ }
+.actived{
+    border-bottom: 2px solid white;
+}
+
+.title-text{
+    margin: 20rem  0 0 ;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #dddddd;
+}
+::-webkit-scrollbar-thumb{
+    background: #d00000;
+}
+.bg-1{
+    background-color: #d00000;
+    color: white;
+}
+.text-1{
+    color: #ffba08;
+}
+
+.header{
+    width: 100%;
+    background-image: url("../img/cq5dam.web.1600.1200.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+@media only screen and (max-width: 576px) and (min-width: 0) {
+    .title{
+        font-size: 2rem;
+    }
+    .carousel{
+        display: none;
+    }
+    .title-text{
+        margin: 10rem  0 0 ;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+    
+}
