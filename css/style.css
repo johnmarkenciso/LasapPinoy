@@ -48,6 +48,56 @@ section{
     background-size: cover;
     height: 100vh;
 }
+
+.imagecard{
+    margin: 0;
+    background-image: url("../img/torta.jpg");
+    width: 50%;
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    box-sizing: border-box;
+
+}
+.about-us{
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    border-radius: 5%;
+}
+.contact-us{
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    border-radius: 5%;
+}
+.contactimagecard{
+    margin: 0;
+    background-image: url("../img/alexander-andrews-JYGnB9gTCls-unsplash.jpg");
+    width: 50%;
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    box-sizing: border-box;
+}
+.card-width{
+    width: 18rem;
+}
+.img-height{
+    height: 20vh;
+    object-fit: cover;
+}
+.card{
+    transition: background-color .2s;
+}
+.card:hover{
+    background-color: white;
+    color: black;
+}
 @media only screen and (max-width: 576px) and (min-width: 0) {
     .title{
         font-size: 2rem;
