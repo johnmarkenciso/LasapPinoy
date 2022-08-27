@@ -47,8 +47,7 @@ section{
 
 .header{
     width: 100%;
-    background-image: url("../img/cq5dam.web.1600.1200.webp");
-    background-size: cover;
+    background: center/cover url("../img/pexels-bea-dela-cruz-12594202.jpg");
     height: 100vh;
     background-repeat: no-repeat;
 }
@@ -72,11 +71,11 @@ section{
     border-radius: 5%;
 }
 .contact-us{
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+    /* margin-top: 8rem;
+    margin-bottom: 5rem; */
     border-radius: 5%;
 }
-.contactimagecard{
+/* .contactimagecard{
     margin: 0;
     background-image: url("../img/alexander-andrews-JYGnB9gTCls-unsplash.jpg");
     width: 50%;
@@ -87,7 +86,7 @@ section{
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
     box-sizing: border-box;
-}
+} */
 .card-width{
     width: 18rem;
 }
@@ -103,55 +102,83 @@ section{
     color: black;
 }
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-    background-color: transparent;
-    width: 100%;
-    height: 400px;
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-box-back {
-    background-color: #d00000;
-    color: white;
-    transform: rotateY(180deg);
-  }
-  .text-flip{
-    margin-top: 10rem;
-  }
+.recipe-img{
+    border: 1px solid white;
+    border-radius: 5%;
+}
 
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #d00000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.fa-arrow-left{
+    color: white;
+}
+#back-button:hover{
+    color: #d00000;
+}
 @media only screen and (max-width: 576px) and (min-width: 0) {
     .title{
         font-size: 2rem;
