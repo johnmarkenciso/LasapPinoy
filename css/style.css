@@ -56,10 +56,11 @@ section{
 
 .imagecard{
     margin: 0;
-    background-image: url("../img/torta.jpg");
+    background-image: url("../img/recipe_img/beef-kaldereta.jpg");
     width: 50%;
     height: 60vh;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     border: none;
     border-top-left-radius: 5%;
@@ -71,6 +72,7 @@ section{
     margin-top: 8rem;
     margin-bottom: 5rem;
     border-radius: 5%;
+    width: 50%;
 }
 .contact-us{
     /* margin-top: 8rem;
@@ -184,12 +186,12 @@ section{
 }
 
 
-div .food-gallery img{
+/* div .food-gallery img{
     width: 25%;
     height: 300px;
     object-fit: cover;
     object-position: center;
-}
+} */
 
 div .food-gallery .con img{
     width: 100%;
@@ -198,7 +200,7 @@ div .food-gallery .con img{
     object-position: center;
 }
 
-div .food-gallery img:hover{
+div .food-gallery  img:hover{
     opacity: .5;
 }
 .con {
@@ -209,6 +211,7 @@ div .food-gallery img:hover{
   /* The overlay effect - lays on top of the container and over the image */
   .overlay {
     position: absolute;
+
     bottom: 0;
     /* background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); */
@@ -229,7 +232,7 @@ div .food-gallery img:hover{
   }
 
 
-@media only screen and (max-width: 576px) and (min-width: 0) {
+@media only screen and (max-width: 767.98px) and (min-width: 0) {
     .title{
         font-size: 4rem;
     }
@@ -244,4 +247,16 @@ div .food-gallery img:hover{
         object-fit: cover;
         object-position: center;
     }
+    .about-us{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .about-text{
+        width: 90%;
+        text-align: justify;
+    }
+    .con {
+        position: relative;
+        width: 100%;
+      }
 }
