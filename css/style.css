@@ -111,7 +111,6 @@ section{
 }
 
 .recipe-img{
-    border: 1px solid white;
     border-radius: 5%;
 }
 
@@ -230,7 +229,11 @@ div .food-gallery  img:hover{
   .con:hover .overlay {
     opacity: 1;
   }
- 
+  
+  .recipe_steps{
+    display: none;
+  }
+
   .star{
     color: white;
     

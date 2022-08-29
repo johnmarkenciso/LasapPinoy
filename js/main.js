@@ -1,15 +1,16 @@
-console.log("test");
-// const readMoreBtn = document.querySelector(".read-more-btn");
-// const text = document.querySelector(".text");
-// readMoreBtn.addEventListener("click", (e)=>{
-//     text.classList.toggle("show-more");
-//     if(readMoreBtn.innerText ==="Read More"){
-//         readMoreBtn.innerText = "Read Less";
-//     }
-//     else{
-//         readMoreBtn.innerText = "Read More";
-//     }
-// });
+const checkbox = document.getElementById('show');
+const recipe = document.getElementById('recipe_steps');
+const textrecipe =document.getElementById('show-recipe');
+
+checkbox.addEventListener('click', function handleClick() {
+    if (checkbox.checked) {
+        recipe.style.display = 'block';
+        textrecipe.innerHTML = "Hide Recipe";
+    } else {
+        recipe.style.display = 'none';
+        textrecipe.innerHTML = "Show Recipe";
+    }
+  });
 
 window.addEventListener("DOMContentLoaded", function(){
 // global elements inside html form
