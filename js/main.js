@@ -69,3 +69,8 @@ form.addEventListener("submit", function(event){
 //     };
 //     request.send(data);
 // }
+
+
+function myFunction(x) {
+    x.classList.toggle("fa-thumbs-down");
+  }
