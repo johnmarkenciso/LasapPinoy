@@ -281,4 +281,7 @@ div .food-gallery  img:hover{
         position: relative;
         width: 100%;
       }
+      .recipe_steps{
+        display: none;
+      }
 }
