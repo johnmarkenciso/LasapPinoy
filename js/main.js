@@ -12,21 +12,22 @@ checkbox.addEventListener('click', function handleClick() {
     }
   });
 
+
 window.addEventListener("DOMContentLoaded", function(){
 // global elements inside html form
 var form = document.getElementById("test-form");
 var button = document.getElementById("test-form-submit");
 var status = document.getElementById("status");
 //function na maghahandle ng success saka error
-function success(){
-    form.reset();
-    status.classList.add("success");
-    status.innerHTML = "Thanks for contacting Us😉. We will Reply to you ASAP";
-}
-function error(){
-    status.classList.add("error");
-    status.innerHTML = "Something went wrong, Error Sending Message";
-}
+// function success(){
+//     form.reset();
+//     status.classList.add("success");
+//     status.innerHTML = "Thanks for contacting Us😉. We will Reply to you ASAP";
+// }
+// function error(){
+//     status.classList.add("error");
+//     status.innerHTML = "Something went wrong, Error Sending Message";
+// }
 // function na maghahandle for submit with form
 form.addEventListener("submit", function(event){
     event.preventDefault();
@@ -52,7 +53,8 @@ form.addEventListener("submit", function(event){
 });
 
 });
-// //helper function for send https request using AJAX
+
+//helper function for send https request using AJAX
 
 // function getFormValue(method, url, data, success, error){
 //     var request = new XMLHttpRequest();
@@ -70,7 +72,3 @@ form.addEventListener("submit", function(event){
 //     request.send(data);
 // }
 
-
-function myFunction(x) {
-    x.classList.toggle("fa-thumbs-down");
-  }
