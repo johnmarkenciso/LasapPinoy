@@ -240,6 +240,16 @@ div .food-gallery  img:hover{
     background-size: cover;
     background-position: center;
   }
+  .pagination a{
+    background-color: #d00000;
+    color: white;
+  }
+
+  .pagination .active span{
+    background-color: #d00000;
+    color: white;
+    border: 1px solid white;
+  }
 
 @media only screen and (max-width: 767.98px) and (min-width: 0) {
     .title{
